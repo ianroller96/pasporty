@@ -2,7 +2,7 @@ Univerzita Palackého v Olomouci
 Přírodovědecká fakulta
 Katedra geoinformatiky
 
-# NÁVRH A VÝVOJ PASPORTIZAČNÍHO KLIENTA PRO MOBILNÍ PLATFORMU ANDROID
+## NÁVRH A VÝVOJ PASPORTIZAČNÍHO KLIENTA PRO MOBILNÍ PLATFORMU ANDROID
 Bakalářská práce
 
 Jan ROLLER
