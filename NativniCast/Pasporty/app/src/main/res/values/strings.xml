@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Pasporty</string>
+    <string name="web">https://gis.upol.cz/pasporty/</string>
+    <string name="mujweb">https://bakalarka.rollergis.cz/</string>
+
+    <string name="popis_aplikace">Vítejte v\u00A0univerzální pasportizační aplikaci určené k\u00A0editaci atributů polygonových, liniových a\u00A0bodových prvků uložených v\u00A0souborech GeoJSON.</string>
+    <string name="popis_about">Aplikace Pasporty je\u00A0univerzální pasportizační aplikace určená k\u00A0editaci atributů polygonových, liniových a\u00A0bodových prvků uložených v\u00A0souborech GeoJSON.</string>
+</resources>

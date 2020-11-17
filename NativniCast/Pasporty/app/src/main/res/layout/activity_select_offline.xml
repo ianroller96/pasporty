@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".SelectOffline">
+
+    <ImageView
+        android:id="@+id/mainimg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/ic_offline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nadpis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Offline Prohlížeč"
+        android:fontFamily="@font/gurajada_regular"
+        android:textColor="@color/grey"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainimg" />
+
+    <Button
+        android:id="@+id/souborVyber"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bgbutton"
+        android:backgroundTint="@color/lightblue"
+        android:textColor="@color/white"
+        android:layout_marginTop="40dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:text="Klikněte pro výběr vrstvy"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nadpis"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/otevritMapu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bgbutton"
+        android:backgroundTint="@color/darkblue"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:text="Otevřít mapu"
+        app:layout_constraintTop_toBottomOf="@id/souborVyber"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
