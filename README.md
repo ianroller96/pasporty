@@ -12,4 +12,5 @@ Jan ROLLER
 Vedoucí práce: Mgr. Rostislav NÉTEK, Ph.D.
 
 Olomouc 2020
+
 Geoinformatika a geografie
