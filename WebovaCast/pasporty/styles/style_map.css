@@ -1,0 +1,227 @@
+/* NUTNE PRO MOBILNI ZARIZENI - HTML, BODY, #MAP nebo jenom #MAP */
+body {
+	padding: 0;
+	margin: 0;        
+}
+
+html, body, #map {
+	height: 100%;
+	width: 100vw;
+}
+
+/* POPUP TABULKA */
+.zui-table {
+	border: solid 1px #EAEAEA;
+	border-collapse: separate;
+	border-spacing: 0;
+	font: normal 13px Arial, sans-serif;
+}
+.zui-table thead th {
+    background-color: #0066A8;
+    border: solid 2px #EAEAEA;
+    color: #FFFFFF;
+    padding: 7px;
+    text-align: center;
+}
+.zui-table tbody td {
+    border: solid 2px #EAEAEA;
+    color: #0066A8;
+    padding: 5px;
+    text-shadow: 1px 1px 1px #EAEAEA;
+}
+.zui-table-rounded {
+    border: none;
+}
+.zui-table-rounded thead th {
+    background-color: #0066A8;
+    border: none;
+    color: #FFFFFF;
+}
+.zui-table-rounded thead th:first-child {
+    border-radius: 0.6em 0 0 0;
+}
+.zui-table-rounded thead th:last-child {
+    border-radius: 0 0.6em 0 0;
+}
+.zui-table-rounded tbody td {
+    border: solid 1px #EAEAEA;
+}
+.zui-table-rounded tbody tr:last-child td:first-child {
+	border-bottom-left-radius: 0.6em;
+    border-radius: 0 0 0 0.6em;
+}
+.zui-table-rounded tbody tr:last-child td:last-child {
+	border-bottom-right-radius: 0.6em;
+    border-radius: 0 0 0.6em 0;
+}
+.zui-table-zebra tbody td:nth-child(odd) {
+	background-color: #EEF7EE;
+}
+.zui-table-zebra tbody tr:nth-child(even) {
+    background-color: #fff;
+}
+
+/* TLACITKO EDITOVAT */
+.edit_div {
+    text-align: center;
+    margin-top: 0.1em;
+}
+
+.edit {
+    font-family: Arial;
+    font-size: 12px;
+    border-radius: 25px;
+    padding: 10px 22px;
+    cursor: pointer;
+    background-color: #EB6D25;
+
+
+    -webkit-box-shadow: inset 0px -5px 5px -5px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0px -5px 5px -5px rgba(0,0,0,0.5);
+    box-shadow: inset 0px -5px 5px -5px rgba(0,0,0,0.5);
+}
+
+.edit:hover {
+    background: #D16221;
+}
+
+.edit_div a {
+    color: white;
+    text-decoration: none;
+}
+
+/*CUSTOM CONTROLS*/
+.easy-button-container {
+    position: fixed !important;
+    bottom: 5px !important;
+    right: 5px !important;
+}
+
+.easy-button-button.leaflet-bar-part.leaflet-interactive.unnamed-state-active {
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 22px !important;
+    color: #262626;
+}
+
+.fa.fa-map {
+    position: relative !important;
+    bottom: -7px !important;
+}
+
+/*STYL LOCATE*/
+.leaflet-control-locate {
+    position: absolute !important;
+    bottom: 60px !important;
+    right: 5px !important;
+}
+
+.leaflet-bar-part.leaflet-bar-part-single {
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 28px !important;
+    color: #262626;
+}
+
+.leaflet-bar-part.leaflet-bar-part-single:hover {
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 28px !important;
+    color: #262626;
+}
+
+.fa.fa-compass {
+    position: relative !important;
+    bottom: -5px !important;
+}
+
+.fa-spinner.fa-spin.fa {
+    position: relative !important;
+    bottom: -5px !important;
+}
+
+/*STYL MERITKO*/
+.leaflet-control-scale {
+    position: absolute !important;
+    bottom: 10px !important;
+    right: 65px !important;
+}
+
+/*STYL PREPINAC VRSTEV*/
+.leaflet-control-layers {
+    right: 5px !important;
+}
+
+.leaflet-control-layers-toggle {
+    width: 40px !important;
+    height: 40px !important;
+}
+
+/*STYL SEARCH*/
+.leaflet-control-search.search-exp.leaflet-control {
+    height: 40px !important;
+    left: 5px !important;
+    width: 200px !important;
+}
+
+.leaflet-control-search .search-input {
+    height: 32px !important;
+    width: 165px !important;
+}
+
+.leaflet-control-search .search-button{
+    margin-top: 5px !important;
+    margin-left: 1px !important;
+    height: 28px !important;
+}
+
+.leaflet-control-search a.search-cancel{
+    margin-top: 10px !important;
+}
+
+.leaflet-control-search.search-exp.leaflet-control .search-input {
+    padding-left: 7px !important;
+} 
+
+
+/*LEGENDA*/
+.leg_nadpis {
+    font-family: 'Magra', sans-serif;
+    font-size: 14px;
+    text-align:center;
+    margin-bottom: 5px;
+}
+
+.leg_prvek {
+    margin-left: 3px;
+    margin-bottom: 4px;
+}
+
+.leg_prvek svg {
+    vertical-align: middle;
+}
+
+.leg_poly {
+    fill: #eba983;
+    stroke-width: 4;
+    stroke: #eb6d25;
+    vertical-align: middle;
+}
+
+.leg_line {
+    stroke-width: 2;
+    stroke: #eb6d25;
+}
+
+.leg_point {
+    vertical-align: middle;
+    margin-left: 3px;
+}
+
+.leg_popis {
+    margin-left: 6px;
+}
+
+.leg_popis_bod {
+    margin-left: 9px;
+}

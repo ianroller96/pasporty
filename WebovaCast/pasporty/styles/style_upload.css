@@ -1,0 +1,412 @@
+/*-----------------
+1. Google font
+------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+
+/*-------------------
+2. Theme Default CSS
+--------------------*/
+
+a {
+    text-decoration: none;
+    outline: none;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    color: #333333;
+}
+
+input:focus,
+button:focus,
+a:focus,
+a:hover {
+    text-decoration: none;
+    outline: none;
+    color: #000000;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 10px;
+    font-weight: 600;
+}
+
+html,
+body {
+    height: 100%
+    width: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #515656;
+}
+
+/* Remove Chrome Input Field's Unwanted Yellow Background Color */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+/**
+*Helper-Classes
+**/
+
+.full-height {
+    width: 100%;
+    height: 100vh;
+}
+
+.relative {
+    position: relative;
+}
+
+.fixed,
+.absolute {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.v-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.section-padding {
+    padding: 120px 0;
+}
+
+.social-menu {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+}
+
+.social-menu li {
+    display: inline-block;
+    margin: 0 3px;
+}
+
+.social-menu li a {
+    display: block;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    line-height: 2.5em;
+    background-color: #ffffff;
+    color: #138fc2;
+    border-radius: 100px;
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+    font-size: 15px;
+}
+
+.social-menu li a:hover {
+    background-color: #138fc2;
+    color: #ffffff;
+    -webkit-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+/**
+*Default Background Class
+**/
+
+.overlay:before,
+.sky-bg {
+    background: #75cbe7;
+    background: -webkit-gradient(linear, left top, left bottom, from(#75cbe7), to(#138fc2));
+    background: linear-gradient(to bottom, #75cbe7 0%, #138fc2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75cbe7', endColorstr='#138fc2', GradientType=0);
+    color: #ffffff;
+}
+
+.gray-bg {
+    background-color: #f2fefe;
+}
+
+/**
+*Default Button
+**/
+
+.button {
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 50px;
+    color: #ffffff;
+    background-color: #2f60c3;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    border: none;
+    -webkit-box-shadow: 2px 5px 20px -5px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 5px 20px -5px rgba(0, 0, 0, 0.1);
+}
+
+.button.white,
+.button:hover {
+    background-color: #ffffff;
+    color: #138fc2;
+}
+
+.button.white:hover {
+    background-color: #2f60c3;
+    color: #ffffff;
+}
+
+.button.orange {
+    background-color: #eb6d25;
+    color: #ffffff;
+}
+
+.button.orange:hover {
+    background-color: #d16221;
+    color: #ffffff;
+}
+
+.button i {
+    margin-left: 5px;
+}
+
+/**
+*Page title
+**/
+
+.page-title {
+    margin-bottom: 60px;
+}
+
+.page-title h2 {
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.page-title h2:after {
+    content: "\e675";
+    font-family: 'themify';
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: -10px;
+    width: 15px;
+    height: 15px;
+    font-size: 14px;
+}
+
+/**
+*Box-style
+**/
+
+.box {
+    padding: 50px 30px;
+    text-align: center;
+    -webkit-box-shadow: 0 0 0 0 #ffffff;
+    box-shadow: 0 0 0 0 #ffffff;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    border-radius: 5px;
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+}
+
+.box:hover {
+    -webkit-box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px)
+}
+
+.box h4 {
+    text-transform: uppercase;
+}
+
+.box .box-icon {
+    height: 160px;
+    margin-bottom: 20px;
+}
+
+.box .box-icon img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.box:hover .box-icon img {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0)
+}
+
+
+/**
+*Mainmenu-area
+**/
+
+.mainmenu-area {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999999;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.overlay,
+.overlay a,
+.mainmenu-area a {
+    color: #ffffff;
+}
+
+.mainmenu-area .logo {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    height: inherit;
+    margin-top: 8px;
+    padding-left: 0;
+}
+
+.mainmenu-area .logo h2 {
+    margin-bottom: 0;
+}
+
+.mainmenu-area #primary-menu > ul > li > a {
+    background: none;
+    padding: 30px 15px;
+    position: relative;
+    border-top: 3px solid transparent;
+    text-align: center;
+}
+
+.mainmenu-area #primary-menu > ul > li > a:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: -10px;
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-top: 10px solid #ffffff;
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.mainmenu-area #primary-menu > ul > li > a:hover:before,
+.mainmenu-area #primary-menu > ul > li.active > a:before {
+    opacity: 1;
+    top: 0;
+}
+
+.mainmenu-area #primary-menu ul li.active a,
+.mainmenu-area #primary-menu ul li a:hover {
+    border-top: 3px solid #ffffff;
+}
+
+.mainmenu-area.affix {
+    background-color: #138fc2;
+}
+
+
+/*-------------------
+3. Footer area
+--------------------*/
+
+.footer-area {
+    padding-top: 120px;
+    z-index: 1;
+}
+
+.footer-bg {
+    z-index: -1;
+}
+
+.footer-top {
+    margin-bottom: 150px;
+}
+
+.side-icon-box {
+    margin-bottom: 30px;
+    position: relative;
+    padding-left: 80px;
+}
+
+.side-icon-box a {
+    color: #ffffff;
+}
+
+.side-icon-box .side-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+}
+
+.side-icon-box strong {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-middle {
+    margin-bottom: 60px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+
+/*-------------------
+3. Moje styly
+--------------------*/
+
+/***
+*Styl fileInputu - nechat ho zmizet
+****/
+
+#fileInput {
+   opacity: 0;
+   position: absolute;
+   z-index: -1;
+}
+
+#label {
+    cursor: pointer;
+}
